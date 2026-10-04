@@ -1,0 +1,10 @@
+<h2>Comments</h2>
+
+<form method="POST">
+<input name="comment">
+<input type="submit">
+</form>
+
+{% for c in comments %}
+<li>{{ c|safe }}</li>
+{% endfor %}
